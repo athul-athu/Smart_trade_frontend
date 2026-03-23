@@ -215,7 +215,7 @@ const App: React.FC = () => {
       setError(null);
     } catch (e: any) {
       console.error(e);
-      setError("Backend unreachable. Ensure FastAPI is running on port 8000.");
+      setError("Backend unreachable. Check if the backend service is available.");
     }
   };
 
@@ -269,7 +269,7 @@ const App: React.FC = () => {
       setAgentStatus(res.data.status);
       setError(null);
     } catch (e: any) {
-      alert("Failed to toggle agent. Is the backend running?");
+      alert("Failed to toggle agent. Check if the backend service is available.");
     }
   };
 
