@@ -277,7 +277,7 @@ const App: React.FC = () => {
   // ── Watchlist REST Polling (every 3 seconds) ──────────────────────────────
   const fetchWatchlist = async () => {
     try {
-      const res = await axios.get('/api/market/watchlist');
+      const res = await axios.get('/api/market/watchlist/');
       if (res.data.error) {
         setPollStatus('error');
         return;
