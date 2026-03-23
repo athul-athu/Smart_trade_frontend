@@ -319,7 +319,7 @@ const App: React.FC = () => {
     setIsSearching(true);
     const timeout = setTimeout(async () => {
       try {
-        const res = await axios.get(`http://localhost:8000/api/market/search?q=${searchQuery}`);
+        const res = await axios.get(`/api/market/search?q=${searchQuery}`);
         if (res.data.status === 'success') {
           setSearchResults(res.data.results);
         }
@@ -344,7 +344,7 @@ const App: React.FC = () => {
     setIsConnecting(true);
     try {
       // Step 1: Ask backend to generate the dynamic login URL using API key from .env
-      const res = await axios.get('http://localhost:8000/api/auth/zerodha/login');
+      const res = await axios.get('/api/auth/zerodha/login');
 
       // Step 2: Backend returns: { login_url: "https://kite.zerodha.com/connect/login?v=3&api_key=...", status: "initialized" }
       if (res.data.login_url) {
