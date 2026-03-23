@@ -1,0 +1,71 @@
+[
+  {
+    "type": "staticAssets",
+    "artefacts": [
+      {
+        "path": "/frontend/index.html",
+        "type": "HTML",
+        "size": 627
+      },
+      {
+        "path": "/frontend/package-lock.json",
+        "type": "Misc",
+        "size": 69200
+      },
+      {
+        "path": "/frontend/package.json",
+        "type": "Misc",
+        "size": 540
+      },
+      {
+        "path": "/frontend/public/dashboard_stock_chart.png",
+        "type": "Image",
+        "size": 28197
+      },
+      {
+        "path": "/frontend/public/graph.png",
+        "type": "Image",
+        "size": 6158
+      },
+      {
+        "path": "/frontend/src/App.tsx",
+        "type": "Misc",
+        "size": 87272
+      },
+      {
+        "path": "/frontend/src/components/AgentTab.tsx",
+        "type": "Misc",
+        "size": 19777
+      },
+      {
+        "path": "/frontend/src/components/CandlestickChart.tsx",
+        "type": "Misc",
+        "size": 6798
+      },
+      {
+        "path": "/frontend/src/components/RiskManager.tsx",
+        "type": "Misc",
+        "size": 8410
+      },
+      {
+        "path": "/frontend/src/index.css",
+        "type": "CSS",
+        "size": 11887
+      },
+      {
+        "path": "/frontend/src/main.tsx",
+        "type": "Misc",
+        "size": 236
+      },
+      {
+        "path": "/frontend/vite.config.ts",
+        "type": "Media",
+        "size": 291
+      }
+    ]
+  },
+  {
+    "type": "cronJobs",
+    "artefacts": []
+  }
+]
