@@ -249,7 +249,8 @@ const App: React.FC = () => {
       }
     } catch (e: any) {
       console.error("Profile fetch error:", e);
-      alert(e.response?.data?.detail || "Failed to fetch profile. Make sure you are connected.");
+      const msg = e.response?.data?.detail || (e.response?.status === 400 ? "Connect your Zerodha account first." : "Failed to fetch profile.");
+      alert(msg);
     } finally {
       setProfileLoading(false);
     }
